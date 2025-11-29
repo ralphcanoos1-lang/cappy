@@ -1,0 +1,440 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1E2832;
+}
+
+.html{
+  scroll-behavior: smooth;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto; /* center horizontally */
+  overflow: hidden;
+}
+
+.background {
+  background-image: url(/IMAGES/bg1.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.circle {
+  background-image: url(/IMAGES/cirkol.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1300px;
+  height: 900px;
+  position: relative;
+  left: -200px;
+  top: 10px;
+}
+
+.diagonal {
+  position: absolute;
+  top: 610px;
+  height: 120px;
+  width: 650px;
+  clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
+  background-color: #1E2832;
+}
+
+.diagonalEntrance{
+  animation: resize 1s forwards;
+}
+
+@keyframes resize{
+  0%{
+    transform: scale(2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.Headset {
+  background-image: url(/IMAGES/HEADSET_Webby.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 700px;
+  height: 700px;
+  position: absolute;
+  top: 10px;
+  left: 390px;
+}
+
+.entrance22{
+  opacity: 0;
+  animation: slideFadeIn 1s ease forwards;
+}
+
+@keyframes slideFadeIn{
+  0%{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.STUDIO {
+  font-size: 170px;
+  position: absolute;
+  color: rgb(240, 240, 240);
+  left: 60%;
+  top: 80px;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 20px;
+  text-shadow: 0 1px 20px rgb(0, 0, 0, 0.8);
+}
+
+.entranceStudio{
+  opacity: 0;
+  animation: fadeInStudio 1s ease forwards;
+}
+
+@keyframes fadeInStudio{
+  0%{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.white_glow{
+  background-image: url(/IMAGES/white_glow.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 950px;
+  position:absolute;
+  top: 0;
+  left: 1%;
+  opacity: 70%;
+}
+
+.Headset1 {
+  background-image: url(/IMAGES/headset11.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 650px;
+  height: 600px;
+  position: absolute;
+  top: 450px;
+  left: 450px;
+  transform: rotate(180deg);
+  opacity: 21%;
+}
+
+.experience {
+  font-size: 25px;
+  position: absolute;
+  top: 310px;
+  color: rgb(224, 224, 224);
+  right: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 5px;
+}
+
+.WIRELESS {
+  font-size: 100px;
+  color: #ffffff;
+  position: absolute;
+  top: 480px;
+  left: 70px;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 5px ;
+}
+
+.entranceWireless{
+  opacity: 0;
+  animation: fadeInLink 1s ease forwards;
+}
+
+@keyframes fadeInLink{
+  0%{
+    opacity: 0;
+    transform: translatex(-50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translatex(0);
+  }
+}
+
+/* ======================= NAV ======================= */
+nav {
+  position: fixed;      
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.links {
+  display: flex;
+  gap: 80px;
+  font-family: "Sansation", sans-serif;
+  padding: 20px 50px;
+  justify-content: flex-end;
+
+
+  opacity: 100%;
+}
+
+.links a {
+  font-family: "Sansation", sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.links a:hover{
+  color: rgb(6, 183, 243);
+
+}
+
+.linksEntrance{
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ======================= NEW PAGE ======================= */
+.NewPage {
+  height: 1000px;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  background-image: url(/IMAGES/bg2.svg);
+}
+
+#air1, #air2, #air3{
+  color:white;
+  font-family: "Sansation", sans-serif;
+}
+
+.containerAIRPODS{
+  position: relative;
+  top: 100px;
+}
+
+.AIRPODS{
+  font-size: 60px;
+  top: 30px;
+  left: 100px;
+  position: absolute;
+  letter-spacing: 10px;
+}
+
+.textMagic{
+  font-size: 30px;
+  position: absolute;
+  top: 250px;
+  left: 100px;
+  letter-spacing: 5px;
+}
+
+.newpage_Sentence{
+  font-size: 20px;
+  width: 560px;
+  position: absolute;
+  top: 340px;
+  left: 100px;
+  line-height: 30px;
+}
+
+.earphone{
+  background-image: url(/IMAGES/earphone.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 650px;
+  width: 700px;
+  position: absolute;
+  right:10px;
+  top: 330px;
+}
+
+.image-reveal{
+  animation: imageReveal both;
+  animation-timeline: view(50 auto);
+}
+
+@keyframes imageReveal{
+  from{
+    filter:saturate(0) contrast(4) brightness(.1) blur(5px);
+    opacity: 0;
+    scale: .95;
+    translate: 0 4rem; 
+  }
+  to{
+    filter: none;
+    opacity: 1;
+    scale:1;
+    translate: 0 0;
+  }
+}
+
+.whiteGlow{
+  background-image: url(/IMAGES/white_glow.png);
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 900px;
+  width: 1050px;
+  position:absolute;
+  right: -100px;
+  top: 200px;
+  opacity: 40%;
+}
+
+.buttonShop {
+  display: inline-block;       
+  padding: 20px 40px;        
+  background-color: #404954;  
+  color: white;              
+  text-decoration: none;      
+  position: absolute;        
+  left: 180px;
+  top: 70%;      
+  border-radius: 40px;    
+  font-size: 35px;        
+  font-weight: bold;
+  text-align: center;
+  font-family: "Sansation", sans-serif;
+  transition: all 0.3s ease;  
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.buttonShop:hover {
+  background-color: #172028;
+  transform: translateY(-3px) scale(1.05); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.buttonShop:active {
+  transform: translateY(-1px) scale(1.02); 
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.buttonShop::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #404954;
+  transition: all 0.4s;
+}
+
+.buttonShop:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+
+.singleText{
+  font-size: 20px;
+  position: absolute;
+  top: 67%;
+  left: 182px;
+  color: rgb(207, 207, 207);
+  font-family: "Sansation", sans-serif;
+}
+
+.thirdPage{
+  height: 1300px;
+  width: 100vw;
+  position: relative;
+}
+
+.categories{
+  position: absolute;
+  font-size: 60px;
+  top: 220px;
+  color: rgb(233, 231, 231);
+  font-family: "Sansation", sans-serif;
+  left: 39%;
+}
+
+.Square{
+  background-color: #1E2832; 
+  height: 600px; 
+  width:1100px;
+  position: relative;
+  top: 350px;
+  left: 200px;
+}
+
+.grid{
+  position: absolute;
+  display: grid;
+  grid-template-columns: 300px 400px 200px 200px;
+  grid-template-rows: 370px 200px;
+  gap: 1em;
+  grid-template-areas: 
+    "box1 box2 box2 box3"
+    "box1 box4 box5 box5";
+}
+
+.item{
+  background-color:#D9D9D9;
+  border-radius: 10px;
+  transition: all 0.5s ease; /* smooth animation */
+  transform-style: preserve-3d; /* 3D effect */
+  cursor: pointer;
+}
+
+.item:hover{
+  background-color: #053f79;
+  transform: rotateX(10deg) scale(1.05);
+  background-color: #011222;
+
+  
+
+}
+
+.box1{
+  background-image: url(/IMAGES/4.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.holder{
+  position: absolute;
+  background-color: #222222;
+  height: 150px;
+  width: 100vw;
+  bottom: 1px; 
+}
